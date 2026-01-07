@@ -1,0 +1,33 @@
+%!Adobe-FontList 1.25
+%Locale:0x40e
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:MomoTrustDisplay-Regular
+FamilyName:Momo Trust Display
+StyleName:Regular
+FullName:Momo Trust Display Regular
+MenuName:Momo Trust Display
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:F:\forMORE\Font\Momo_Trust_Display\MomoTrustDisplay-Regular.ttf
+DataFormat:sfntData
+hasSVG:no
+hasCOLR:no
+VariableFontType:NonVariableFont
+FileLength:93400
+FileModTime:1763557390
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Win,1,Momo Trust Display
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:F:\forMORE\Font\Momo_Trust_Display\OFL.txt
+FileModTime:1763557390
+%EndFont
+

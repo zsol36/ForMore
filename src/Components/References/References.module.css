@@ -1,0 +1,20 @@
+.gridiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    justify-items: center;
+}
+.imagecontainer {
+  max-width: auto;
+  max-height: auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.fixedimage {
+  width: 30vw;       
+  height: 40vh;      
+  object-fit: cover; 
+  display: block;      
+  background-color: #f0f0f0;
+}

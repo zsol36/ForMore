@@ -1,0 +1,67 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    height: 3vh;
+    background: white;
+    color: #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    transition: transform 0.3s ease;
+    border-bottom: #999 1px solid;
+}
+
+
+.topBarHidden {
+  transform: translateY(-100%);
+}
+
+.bottomBar {
+  height: 8vh;
+  background: white;
+  color: #111;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  transition: transform 0.3s ease;
+}
+
+.bottomBarShiftUp {
+  transform: translateY(calc(-3vh - 1px));
+  height: 5vh;
+}
+.Formorelogo{
+    height: 100%;
+    float: left;
+}
+.subsites{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: fixed;
+    right: 0;
+}
+.subsiteitem{
+    padding: 0 5rem;
+}
+
+/* link base + active underline */
+.navlink{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+.activeSubsite{
+  border-bottom: 3px solid red;
+}
