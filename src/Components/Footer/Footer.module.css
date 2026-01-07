@@ -1,5 +1,7 @@
-.Footermaindiv{
+.Footermaindiv {
 
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,17 +12,73 @@
     background-size: cover;
     background-position: center;
     width: 100%;
+    height: 35vh;
     color: white;
-    padding-bottom: 5vh;
+    
     filter: grayscale(50%);
 }
-.flexcol{
+
+.Footermaindiv::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+.Footermaindiv > *{
+    position: relative;
+    z-index: 2;
+}
+
+.flexcol {
+    width: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
 }
-.flexrow{
-      display: flex;
+
+.flexrow {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.footertext {
+    width: 80%;
+    padding: 0 5rem 5rem 5rem;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .Footermaindiv {
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+        height: 65vh;
+        padding: 5rem;
+    }
+
+    .flexcol {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .flexrow {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footertext {
+        padding: 0;
+        height: auto;
+        color: white;
+    }
 }

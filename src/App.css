@@ -71,8 +71,20 @@
   box-sizing: border-box;
 
 }
-a {
+a{
   text-decoration: none;
   color: inherit;
+}
+@media (max-width: 1200px) {
+  :is(.white-div, .gray-div) > :is(div, p, h4){
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .information {
+    width: 80%;
+  }
 }
 

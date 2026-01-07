@@ -51,8 +51,8 @@ export const Main = () => {
               <h1>Referenciák</h1>
             </div>
             <div className="flex-row">
-              <img  src={NiceHouse} alt="" />
-              <img  src={Interlaw} alt="" />
+              <img style={{maxWidth:"100%",maxHeight:"auto",paddingBottom:"2rem"}}  src={NiceHouse} alt="" />
+              <img style={{maxWidth:"100%",maxHeight:"auto"}} src={Interlaw} alt="" />
             </div>
             <div style={{textAlign: "center"}} className="flex-row">
               <Button style={{borderRadius:"0",fontSize:"2rem",backgroundColor:"#111",margin:"3vh"}} variant="contained" >
