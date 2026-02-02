@@ -1,5 +1,5 @@
-.gray-div{
-    display: flex;
+.gray-div {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -8,15 +8,29 @@
   background-color: #222;
   padding-bottom: 3rem;
 }
-#Gray-div-Ref{
- background-image: url(assets/Stockimage.png);
- background-repeat: no-repeat;
-  background-size: cover;  
+
+#Gray-div-Ref {
+  background-image: url(assets/Stockimage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   text-align: center;
   height: 30vh;
 }
-.white-div{
+
+.question-text>h4 {
+  width: 100%;
+  text-align: left;
+
+}
+
+@media (max-width: 1300px) {
+  #Gray-div-Ref {
+    height: 75vh;
+  }
+}
+
+.white-div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -27,17 +41,20 @@
   background-color: white;
   padding-bottom: 3rem;
 }
-#question{
+
+#question {
   width: 80%;
 }
-.question-text{
-   position: relative;
+
+.question-text {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 40%;
 }
-.question-img{
+
+.question-img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -46,45 +63,85 @@
   align-items: center;
   width: 60%;
 }
-.nicebuilding{
+
+.nicebuilding {
   transform: scale(1.0);
   transform-origin: center;
 }
 
-.flex-col{
- position: relative;
+.flex-col {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.flex-row{
+
+.flex-row {
   position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.information{
+.flex-rowmref{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.flex-rowmref img{
+  object-fit: cover;
+}
+.information {
   color: white;
-  padding: 2% 5%  2% 5%;
-  width:50%;
+  padding: 2% 5% 2% 5%;
+  width: 50%;
   box-sizing: border-box;
 
 }
-a{
+
+.information * {
+  padding: 1rem;
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }
-@media (max-width: 1200px) {
-  :is(.white-div, .gray-div) > :is(div, p, h4){
+
+.question-img img {
+  width: 40%;
+}
+ /* Szolgaltatasaink css */
+ #szolgalimg{
+    width: 65%;
+  }
+@media (max-width: 1300px) {
+  :is(.white-div, .gray-div)> :is(div, p, h4) {
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin: 0;
     padding: 0;
   }
+
   .information {
     width: 80%;
   }
-}
+  .flex-rowmref{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 1vw;
+  }
+  .question-img img {
+    width: 80%;
+    padding: 2rem;
+  }
 
+  /* Szolgaltatasaink css */
+  #szolgalimg{
+    width: 90%;
+    padding: 2vh;
+  }
+}

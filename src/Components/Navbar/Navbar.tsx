@@ -37,7 +37,7 @@ export const Navbar = () => {
         <h4>
           <Smartphone fontSize='small' /> +36203856262
         </h4>
-        <h4 style={{ padding: "1rem" }}>
+        <h4 id={styles.emailshift}>
           <Email fontSize='small'></Email>  ferenc.monori@formore.hu
         </h4>
       </div>
@@ -52,18 +52,18 @@ export const Navbar = () => {
       >
         <img onClick={() => navigate("/")} style={{ cursor: "pointer" }} className={styles.Formorelogo} src={logo} ></img>
         <div className={styles.subsites}>
-          <h3 className={styles.subsiteitem}>
+          <h4 className={styles.subsiteitem}>
             <NavLink to="/rolunk" className={({ isActive }) => isActive ? `${styles.navlink} ${styles.activeSubsite}` : styles.navlink}>Rólunk</NavLink>
-          </h3>
-          <h3 className={styles.subsiteitem}>
+          </h4>
+          <h4 className={styles.subsiteitem}>
             <NavLink to="/szolgaltatasaink" className={({ isActive }) => isActive ? `${styles.navlink} ${styles.activeSubsite}` : styles.navlink}>Szolgáltatásaink</NavLink>
-          </h3>
-          <h3 className={styles.subsiteitem}>
+          </h4>
+          <h4 className={styles.subsiteitem}>
             <NavLink to="/referenciak" className={({ isActive }) => isActive ? `${styles.navlink} ${styles.activeSubsite}` : styles.navlink}>Referenciák</NavLink>
-          </h3>
-          <h3 className={styles.subsiteitem}>
+          </h4>
+          <h4 className={styles.subsiteitem}>
             <NavLink to="/kapcsolat" className={({ isActive }) => isActive ? `${styles.navlink} ${styles.activeSubsite}` : styles.navlink}>Kapcsolat</NavLink>
-          </h3>
+          </h4>
         </div>
         <div className={styles.menubuttonwrapper}>
           <Button className={styles.menubutton} onClick={() => setOpen(!open)}>☰</Button>
@@ -71,7 +71,7 @@ export const Navbar = () => {
 
       </div>
       <div className={open ? `${styles.menumobile} ${styles.open}` : styles.menumobile}>
-        <div style={{ height: "10vh", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <div style={{ height: "10%", width: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
           <img onClick={() => navigate("/")} style={{ cursor: "pointer", maxHeight: "100%", width: "auto" }} className={styles.Formorelogo} src={logo} ></img>
         </div>
         <Divider color="gray" />
@@ -79,34 +79,34 @@ export const Navbar = () => {
 
           <NavLink className={styles.menuwrapper} to="/rolunk">
             {({ isActive }) => (
-              <h3 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
+              <h4 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
                 Rólunk
-              </h3>
+              </h4>
             )}
           </NavLink>
 
 
           <NavLink className={styles.menuwrapper} to="/szolgaltatasaink">
             {({ isActive }) => (
-              <h3 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
+              <h4 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
                 Szolgáltatásaink
-              </h3>
+              </h4>
             )}
           </NavLink>
 
 
           <NavLink className={styles.menuwrapper} to="/referenciak">
             {({ isActive }) => (
-              <h3 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
+              <h4 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
                 Referenciák
-              </h3>
+              </h4>
             )}
           </NavLink>
           <NavLink className={styles.menuwrapper} to="/kapcsolat">
             {({ isActive }) => (
-              <h3 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
+              <h4 className={isActive ? `${styles.navlink} ${styles.activeSubsite} ${styles.mobilemenuitem}` : `${styles.navlink} ${styles.mobilemenuitem}`}>
                 Kapcsolat
-              </h3>
+              </h4>
             )}
           </NavLink>
         </div>

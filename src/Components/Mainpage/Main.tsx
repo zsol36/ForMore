@@ -13,7 +13,7 @@ export const Main = () => {
   return (
     <>
     <div id="Gray-div-Ref"  className="gray-div">
-      <h2>Formore mérnöki szolgáltatások</h2>
+      <h2 className="title">Formore mérnöki szolgáltatások</h2>
     </div>
     <div style={{margin:"5% 0 5% 0"}} id="question" className="white-div">
         <div className="question-text">
@@ -42,7 +42,7 @@ export const Main = () => {
                 biztonsággal rá lehet bízni a feladatokat.</p>
         </div>
         <div className="question-img">
-            <img style={{width:"40%"}} className="nicebuilding" src={nicebuilding} alt="" />
+            <img  className="nicebuilding" src={nicebuilding} alt="" />
         </div>
     </div>
     <div  className="gray-div">
@@ -50,13 +50,13 @@ export const Main = () => {
            <div style={{textAlign: "center"}} className="flex-row">
               <h1>Referenciák</h1>
             </div>
-            <div className="flex-row">
-              <img style={{maxWidth:"100%",maxHeight:"auto",paddingBottom:"2rem"}}  src={NiceHouse} alt="" />
+            <div className="flex-rowmref">
+              <img style={{maxWidth:"100%",maxHeight:"auto"}}  src={NiceHouse} alt="" />
               <img style={{maxWidth:"100%",maxHeight:"auto"}} src={Interlaw} alt="" />
             </div>
             <div style={{textAlign: "center"}} className="flex-row">
               <Button style={{borderRadius:"0",fontSize:"2rem",backgroundColor:"#111",margin:"3vh"}} variant="contained" >
-               <Link to="/referenciak">   Referenciák</Link>
+               <Link to="/referenciak"> <h2>Referenciák</h2></Link>
               </Button>
            </div>
          

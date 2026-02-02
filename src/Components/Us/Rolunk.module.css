@@ -8,14 +8,7 @@
   background-color: #222;
   padding-bottom: 3rem;
 }
-#GraydivRef{
- background-image: url("/src/assets/Stockimage.png");
- background-repeat: no-repeat;
-  background-size: cover;  
-  background-position: center;
-  text-align: center;
-  height: 30vh;
-}
+
 .whitediv{
   display: flex;
   flex-direction: row;
@@ -23,9 +16,9 @@
   justify-content: center;
   position: relative;
   width: 100%;
-
+  padding-top: 2vh;
   background-color: white;
-  padding-bottom: 3rem;
+  padding-bottom: 2vh;
 }
 
 .questiontext{
@@ -42,6 +35,23 @@
   position: relative;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1rem;
   width: calc(30% - 20px);
+}
+@media (max-width: 1000px){
+  .questiontext{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .questiontext h2{
+    margin: 0;
+  }
+  .whitediv{
+    padding-bottom: 0;
+  }
+  .questionimg{
+    width: 100%;
+
+  }
 }

@@ -22,7 +22,7 @@ export const References = () => {
     return (
         <>
             <div id="Gray-div-Ref" className="gray-div">
-                <h2>Referenciák</h2>
+                <h2 className="title">Referenciák</h2>
             </div>
             <div className={styles.griddiv} style={{paddingBottom:"5vh"}}>
                 <div className={styles.imagecontainer}>
@@ -30,7 +30,7 @@ export const References = () => {
                         <div style={{ justifyContent: "normal", padding: "2vh" }}>
                             <h1 style={{textAlign: "left" }} >Csokonai színház belsőépítészeti munkái</h1>
                         </div>
-                        <div style={{ display: "flex", gap: "8px" }}>
+                        <div className={styles.pictures}>
                             <img src={Csokonai1} className={styles.fixedimage} alt="" />
                             <img src={Csokonai2} className={styles.fixedimage} alt="" />
                             <img src={Csokonai3} className={styles.fixedimage} alt="" />
@@ -43,7 +43,7 @@ export const References = () => {
                         <div style={{ justifyContent: "normal", padding: "2vh" }}>
                             <h1 style={{textAlign: "left" }} >ILEA Nemzetközi rendőr képző akadémia </h1>
                         </div>
-                        <div style={{ display: "flex", gap: "8px" }}>
+                        <div className={styles.pictures}>
                             <img src={akademia1} className={styles.fixedimage} alt="" />
                             <img src={akademia2} className={styles.fixedimage} alt="" />
                             <img src={akademia3} className={styles.fixedimage} alt="" />
@@ -56,7 +56,7 @@ export const References = () => {
                         <div style={{ justifyContent: "normal", padding: "2vh" }}>
                             <h1 style={{textAlign: "left" }} >Nagyváradi kaszinó</h1>
                         </div>
-                        <div style={{ display: "flex", gap: "8px" }}>
+                        <div className={styles.pictures}>
                             <img src={kaszi1} className={styles.fixedimage} alt="" />
                             <img src={placeholder} className={styles.fixedimage} alt="" />
                             <img src={placeholder} className={styles.fixedimage} alt="" />
@@ -69,7 +69,7 @@ export const References = () => {
                         <div style={{ justifyContent: "normal", padding: "2vh" }}>
                             <h1 style={{textAlign: "left" }} >Richter 5. épület belsőépítészeti munkái</h1>
                         </div>
-                        <div style={{ display: "flex", gap: "8px" }}>
+                        <div className={styles.pictures}>
                             <img src={richter1} className={styles.fixedimage} alt="" />
                             <img src={richter2} className={styles.fixedimage} alt="" />
                             <img src={richter3} className={styles.fixedimage} alt="" />
@@ -82,7 +82,7 @@ export const References = () => {
                         <div style={{ justifyContent: "normal", padding: "2vh" }}>
                             <h1 style={{textAlign: "left" }} >Mr. alkohol</h1>
                         </div>
-                        <div style={{ display: "flex", gap: "8px" }}>
+                        <div className={styles.pictures}>
                             <img src={Alkohol1} className={styles.fixedimage} alt="" />
                             <img src={Alkohol2} className={styles.fixedimage} alt="" />
                             <img src={Alkohol3} className={styles.fixedimage} alt="" />
@@ -95,7 +95,7 @@ export const References = () => {
                         <div style={{ justifyContent: "normal", padding: "2vh" }}>
                             <h1 style={{textAlign: "left" }} >Belgrád Airport City iroda </h1>
                         </div>
-                        <div style={{ display: "flex", gap: "8px" }}>
+                        <div className={styles.pictures}>
                             <img src={airport1} className={styles.fixedimage} alt="" />
                             <img src={airport2} className={styles.fixedimage} alt="" />
                             <img src={airport3} className={styles.fixedimage} alt="" />

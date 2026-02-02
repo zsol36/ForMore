@@ -3,28 +3,28 @@ import Kaszi from "../../assets/Kaszi.png";
 export const Rolunk = () => {
   return (
     <>
-    <div id={style.GraydivRef}  className={style.graydiv}>
-      <h2>Rólunk</h2>
+    <div id="Gray-div-Ref"  className="gray-div">
+      <h2 className="title">Rólunk</h2>
     </div>
-    <div style={{width:"90%",padding:"5vh 0 5vh 0"}} className={style.whitediv}>
-        <div style={{paddingRight:"120px"}} className={style.questionimg}>
+    <div style={{width:"90%"}} className={style.whitediv}>
+        <div  className={style.questionimg}>
                 <img style={{width:"100%"}} src={Kaszi} alt="" />
         </div>
         <div className={style.questiontext}>
            <h2>Kik vagyunk? – A forMore háttere</h2> 
-            Cégcsoportunk folyamatos fejlődésének és szakmai bővülésének eredményeként hoztuk létre a forMore mérnöki irodát, amely vállalatunk harmadik, önálló egységeként működik.
+           <p> Cégcsoportunk folyamatos fejlődésének és szakmai bővülésének eredményeként hoztuk létre a forMore mérnöki irodát, amely vállalatunk harmadik, önálló egységeként működik.
             Célunk egy olyan egységes, magas színvonalú mérnöki háttér megteremtése, amely mindhárom cégünk munkáját hatékonyan támogatja – a tervezéstől a gyártási folyamatokon át egészen a műszaki üzemeltetésig.
-            A forMore rugalmasan reagál ügyfeleink igényeire, szakmai stabilitást és megbízható műszaki támogatást nyújtva a projekt teljes életciklusa során.
+            A forMore rugalmasan reagál ügyfeleink igényeire, szakmai stabilitást és megbízható műszaki támogatást nyújtva a projekt teljes életciklusa során.</p>
          <h2>  A cégcsoport tagjai</h2> 
          <ul>
-            <li>	Forment – tervezőiroda</li>	
-            <li>	Formilia – kültéri konyhák gyártása</li>	
-            <li>	forMore – mérnöki iroda</li>	
+            <li><p>	Forment – tervezőiroda</p></li>	
+            <li><p>	Formilia – kültéri konyhák gyártása</p></li>	
+            <li><p>	forMore – mérnöki iroda</p></li>	
         </ul>
         </div>
     </div>
     <div id="" className="white-div">
-        <div style={{width:"80%",padding:"5vh 0 5vh 0"}}>
+        <div style={{width:"80%"}}>
         
         <h2> Miért érdemes minket választani?</h2>
 

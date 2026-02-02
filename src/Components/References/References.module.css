@@ -1,9 +1,3 @@
-.gridiv {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    justify-items: center;
-}
 .imagecontainer {
   max-width: auto;
   max-height: auto;
@@ -11,10 +5,32 @@
   height: 100%;
   overflow: hidden;
 }
+
 .fixedimage {
-  width: 30vw;       
-  height: 40vh;      
-  object-fit: cover; 
-  display: block;      
+  width: 30vw;
+  height: 40vh;
+  object-fit: cover;
+  display: block;
   background-color: #f0f0f0;
+}
+
+.pictures {
+  display: flex;
+  gap: 8px;
+}
+
+@media (max-width: 970px) {
+  .pictures {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    row-gap: 8px;
+
+  }
+
+  .fixedimage {
+    width: 85vw;
+    height: 65vh;
+  }
 }

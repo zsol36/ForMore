@@ -3,10 +3,10 @@ export const Szolgaltatasaink = () => {
   return (
     <>
       <div id="Gray-div-Ref" className="gray-div">
-        <h2>Szolgáltatásaink</h2>
+        <h2 className="title">Szolgáltatásaink</h2>
       </div>
       <div style={{ width: "90%", padding: "5vh 0 5vh 0" }} className="white-div">
-        <div className={` question-text`}>
+        <div className={`question-text`}>
           <ol>
            <li> <h4>  Bútoripari szolgáltatások:</h4></li>
             <ul>
@@ -42,7 +42,7 @@ export const Szolgaltatasaink = () => {
           </ol>
         </div>
         <div  className="question-img">
-          <img style={{width:"65%"}}  src={bathroom} alt="" />
+          <img id="szolgalimg"  src={bathroom} alt="" />
         </div>
       </div>
     </>
